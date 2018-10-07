@@ -5,7 +5,7 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pip install ./LumineerLabs/OMIR
+  - pip install ./LumineerLabs/OMIR/
 # command to run tests
 script:
-  - pytest ./LumineerLabs/OMIR/tests
+  - pytest ./LumineerLabs/OMIR/tests/
