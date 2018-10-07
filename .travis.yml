@@ -15,7 +15,7 @@ stages:
   - test
 jobs:
   include:
-    stage: lint
-    script: flake8 --max-line-length 119
-    stage: test
-    script: pytest
+    - stage: lint
+      script: flake8 --max-line-length 119
+    - stage: test
+      script: pytest
