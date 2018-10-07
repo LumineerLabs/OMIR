@@ -6,8 +6,16 @@ python:
   - "3.6"
   - "3.7"
 # command to install dependencies
+before_install:
+  - pip install flake8
 install:
   - pip install .
-# command to run tests
-script:
-  - pytest
+stages:
+  - lint
+  - test
+jobs:
+  include:
+    stage: lint
+    script: flake8 --max-line-length 119
+    stage: test
+    script: pytest
