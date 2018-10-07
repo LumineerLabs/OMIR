@@ -11,7 +11,6 @@ setup(
         'numpy',
         'sklearn',
         'pandas',
-        'ast',
         'IPython',
         ],
     author="Lane Haury",
